@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reg_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/reg_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/about_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary" >
+
+            <RelativeLayout
+                android:id="@+id/add_back"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/action_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/reg_title"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/triangle" />
+        <!-- toolbar end -->
+
+
+        <!-- 姓名 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/reg_tb_padding"
+            android:paddingEnd="@dimen/reg_lr_padding"
+            android:paddingStart="@dimen/reg_lr_padding"
+            android:paddingTop="@dimen/reg_tb_padding" >
+
+            <TextView
+                android:layout_width="@dimen/reg_title_width"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/reg_name"
+                android:textSize="@dimen/reg_txt_size" />
+
+            <EditText
+                android:id="@+id/reg_name"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/reg_txt_height"
+                android:layout_marginEnd="@dimen/reg_txt_margin"
+                android:layout_marginStart="@dimen/reg_txt_margin"
+                android:layout_weight="1"
+                android:background="@drawable/txt_bg"
+                android:maxLength="30"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textSize="@dimen/reg_txt_size" 
+                android:singleLine="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/required"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/reg_hint_size" />
+        </LinearLayout>
+
+        <!-- 手机号码 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/reg_tb_padding"
+            android:paddingEnd="@dimen/reg_lr_padding"
+            android:paddingStart="@dimen/reg_lr_padding"
+            android:paddingTop="@dimen/reg_tb_padding" >
+
+            <TextView
+                android:layout_width="@dimen/reg_title_width"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/reg_phone_num"
+                android:textSize="@dimen/reg_txt_size" />
+
+            <EditText
+                android:id="@+id/reg_phone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/reg_txt_height"
+                android:layout_marginEnd="@dimen/reg_txt_margin"
+                android:layout_marginStart="@dimen/reg_txt_margin"
+                android:layout_weight="0.32"
+                android:background="@drawable/txt_bg"
+                android:inputType="number"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text=""
+                android:textSize="@dimen/reg_txt_size" 
+                android:maxLength="11"/>
+
+            <Button
+                android:id="@+id/btn_send_code"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_bg"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:text="@string/reg_send"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- 验证码 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/reg_tb_padding"
+            android:paddingEnd="@dimen/reg_lr_padding"
+            android:paddingStart="@dimen/reg_lr_padding"
+            android:paddingTop="@dimen/reg_tb_padding" >
+
+            <TextView
+                android:layout_width="@dimen/reg_title_width"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/reg_auth_code"
+                android:textSize="@dimen/reg_txt_size" />
+
+            <EditText
+                android:id="@+id/reg_code"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/reg_txt_height"
+                android:layout_marginEnd="@dimen/reg_txt_margin"
+                android:layout_marginStart="@dimen/reg_txt_margin"
+                android:layout_weight="1"
+                android:background="@drawable/txt_bg"
+                android:inputType="number"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textSize="@dimen/reg_txt_size"
+                android:maxLength="6" />
+
+            <TextView
+                android:id="@+id/reg_code_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/reg_send_msg"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/reg_hint_size" />
+        </LinearLayout>
+
+        <!-- 身份证号码 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/reg_tb_padding"
+            android:paddingEnd="@dimen/reg_lr_padding"
+            android:paddingStart="@dimen/reg_lr_padding"
+            android:paddingTop="@dimen/reg_tb_padding" >
+
+            <TextView
+                android:layout_width="@dimen/reg_title_width"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/reg_identity_card"
+                android:textSize="@dimen/reg_txt_size" />
+
+            <EditText
+                android:id="@+id/reg_identity"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/reg_txt_height"
+                android:layout_marginEnd="@dimen/reg_txt_margin"
+                android:layout_marginStart="@dimen/reg_txt_margin"
+                android:layout_weight="1"
+                android:background="@drawable/txt_bg"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textSize="@dimen/reg_txt_size"
+                android:maxLength="18" 
+                android:singleLine="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/required"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/reg_hint_size" />
+        </LinearLayout>
+
+        <!-- 密码 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/reg_tb_padding"
+            android:paddingEnd="@dimen/reg_lr_padding"
+            android:paddingStart="@dimen/reg_lr_padding"
+            android:paddingTop="@dimen/reg_tb_padding" >
+
+            <TextView
+                android:layout_width="@dimen/reg_title_width"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/reg_psw"
+                android:textSize="@dimen/reg_txt_size" />
+
+            <EditText
+                android:id="@+id/reg_psw"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/reg_txt_height"
+                android:layout_marginEnd="@dimen/reg_txt_margin"
+                android:layout_marginStart="@dimen/reg_txt_margin"
+                android:layout_weight="1"
+                android:background="@drawable/txt_bg"
+                android:hint="@string/reg_psw_hint"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textSize="@dimen/reg_txt_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/required"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/reg_hint_size" />
+        </LinearLayout>
+
+        <!-- 确认密码 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/reg_tb_padding"
+            android:paddingEnd="@dimen/reg_lr_padding"
+            android:paddingStart="@dimen/reg_lr_padding"
+            android:paddingTop="@dimen/reg_tb_padding" >
+
+            <TextView
+                android:layout_width="@dimen/reg_title_width"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/reg_conform_psw"
+                android:textSize="@dimen/reg_txt_size" />
+
+            <EditText
+                android:id="@+id/reg_conform_psw"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/reg_txt_height"
+                android:layout_marginEnd="@dimen/reg_txt_margin"
+                android:layout_marginStart="@dimen/reg_txt_margin"
+                android:layout_weight="1"
+                android:background="@drawable/txt_bg"
+                android:hint="@string/reg_psw_again"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textSize="@dimen/reg_txt_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@string/required"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/reg_hint_size" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_bg"
+            android:enabled="false"
+            android:text="@string/reg_now"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/reg_tb_padding"
+            android:paddingStart="30dp"
+            android:paddingTop="@dimen/reg_tb_padding" >
+
+            <CheckBox
+                android:id="@+id/reg_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="false"
+                android:drawableStart="@drawable/checkbox_bg"
+                android:text="@string/reg_auth_msg"
+                android:textColor="@color/checkbox_color" />
+
+            <TextView
+                android:id="@+id/reg_service_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《服务条款》"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

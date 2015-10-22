@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/device_item_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dp" >
+
+    <com.lichkin.customview.DeviceIcon
+        android:id="@+id/device_icon"
+        android:layout_width="@dimen/device_item_icon"
+        android:layout_height="@dimen/device_item_icon"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/device_namge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:text="@string/bp_text"
+        android:textColor="@color/item_text_color" />
+
+    <RelativeLayout
+        android:id="@+id/btn_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="@dimen/device_item_btn_width"
+            android:layout_height="@dimen/device_item_btn_height"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/btn_bg"
+            android:text="@string/btn_delete"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="@dimen/device_item_btn_width"
+            android:layout_height="@dimen/device_item_btn_height"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/btn_bg"
+            android:text="@string/btn_update"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

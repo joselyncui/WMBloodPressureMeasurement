@@ -1,0 +1,115 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg"
+     >
+
+    <LinearLayout
+        android:id="@+id/scroll_inner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/about_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimary" >
+
+            <RelativeLayout
+                android:id="@+id/add_back"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true" >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/action_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/action_login"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/triangle" />
+        <!-- toolbar end -->
+
+        <com.lichkin.customview.RoundImageView
+            android:id="@+id/roundImage_two_border"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_header"
+            imagecontrol:border_inside_color="@color/colorPrimary"
+            imagecontrol:border_outside_color="#5500A2EA"
+            imagecontrol:border_thickness="1dp"/>
+
+         <!-- imagecontrol:border_inside_color="@color/colorPrimary"
+            imagecontrol:border_outside_color="#5500A2EA"
+            imagecontrol:border_thickness="2dp"  -->
+        <com.lichkin.customview.ClearEditText
+            android:id="@+id/txt_username"
+            style="@style/ClearEditText"
+            android:layout_width="match_parent"
+            android:background="@drawable/txt_bg"
+            android:drawableStart="@drawable/ic_action_person"
+            android:hint="@string/hint_username"
+            android:imeOptions="actionNext"
+            android:maxLength="70"/>
+
+        <TextView
+            android:id="@+id/register_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="end"
+            android:layout_gravity="end"
+            android:text="注册账号"
+            android:textColor="@color/colorPrimary" />
+
+        <com.lichkin.customview.ClearEditText
+            android:id="@+id/txt_pwd"
+            style="@style/ClearEditText"
+            android:layout_width="match_parent"
+            android:background="@drawable/txt_bg"
+            android:drawablePadding="7dp"
+            android:drawableStart="@drawable/ic_action_lock"
+            android:hint="@string/hint_pwd"
+            android:inputType="textPassword" 
+            android:maxLength="20"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/btn_login"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</ScrollView>

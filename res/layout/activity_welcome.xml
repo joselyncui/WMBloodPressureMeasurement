@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_bg"
+    tools:context="com.lichkin.activity.WelcomeActivity" >
+    
+	<ImageView
+	    android:id="@+id/welcome_logo"
+	    android:layout_width="97dp"
+	    android:layout_height="93dp"
+	    android:layout_marginTop="70dp"
+	    android:src="@drawable/welcome_logo"
+	   	android:contentDescription="@string/icon_description"
+	    android:layout_centerHorizontal="true"/> 
+	    
+	<ImageView android:id="@+id/welcome_company_name"
+	    android:layout_width="166dp"
+	    android:layout_height="28dp"
+	    android:layout_marginBottom="30dp"
+	    android:src="@drawable/welcome_company_name"
+	   	android:contentDescription="@string/icon_description"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

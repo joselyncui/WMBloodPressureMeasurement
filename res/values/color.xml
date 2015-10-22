@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="windowBackground">#1A1A1A</color>
+
+    <!-- <color name="colorPrimary">#8bc34a</color> -->
+
+    <color name="colorPrimary">#00A2EA</color>
+    <!-- <color name="colorPrimaryDark">#259b24</color> -->
+    <color name="colorPrimaryDark">#004d40</color>
+    <color name="toolbarTextColor">#c6e9ce</color>
+    <color name="txtBgColor">#fff3e0</color>
+    <color name="txtBgColorFoc">#fff3e0</color>
+    
+    <color name="red">#e51c23</color>
+    <color name="green">#259b24</color>
+    <color name="gray">#82827D</color>
+    <color name="white">#ffffff</color>
+	<color name="light_yellow">#F7F8EB</color>
+    
+    <!-- <color name="primaryTextColor">#CCCCCC</color> -->
+    <color name="indigo_dark">#303f9f</color>
+    <!-- <color name="text_primary_color">#d9dcf0</color> -->
+    <color name="list_text_primary_color">#6d6d6d</color>
+    <color name="list_text_second_color">#999999</color>
+    <color name="high_light">#EEFF41</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    
+    <color name="light_gray">#D6D6D6</color>
+    <color name="dark_gray">#CDC9C9</color>
+    <color name="item_text_color">#4c4c4c</color>
+    <color name="item_sub_text_color">#b1b1b1</color>
+    
+    <color name="dark_green">#008B00</color>
+    <color name="light_green">#B7DDC8</color>
+	<color name="black">#20251F</color>
+	<color name="light_black">#333A33</color>
+	<color name="sky_blue">#A4D3EE</color>
+	<color name="chart_bg">@color/white</color>
+	<color name="yellow">#FFD700</color>
+	
+	
+    <color name="dark_blue">#008ED6</color>
+    <color name="fragment_bg">#FEFEFE</color>
+    
+    <color name="device_type_bgcolor">#EEEEEE</color>
+    <color name="bp_pressure_value_color">#383536</color>
+    <color name="history_color">#5B5B5B</color>
+    <color name="yellow_green">#ADCE24</color>
+    <color name="date_color">#5D5D5D</color>
+    <color name="edit_bg_gray">#EEEEEE</color>
+    <color name="checkbox_color">#6E6E6E</color>
+    <color name="light_light_gray">#EFF0F1</color>
+	
+</resources>

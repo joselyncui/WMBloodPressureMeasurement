@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/device_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimary" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_fragment_device"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        
+        <RelativeLayout 
+            android:id="@+id/menu_img"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+           	<ImageView 
+           	    
+           	    android:layout_width="30dp"
+           	    android:layout_height="6dp"
+           	    android:contentDescription="@string/icon_description"
+           	    android:layout_centerInParent="true"
+           	    android:src="@drawable/menu_more"/> 
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/triangle" />
+<!-- toolbar end -->
+
+    <ListView
+        android:id="@+id/device_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp"
+        android:divider="@drawable/black_deliver"
+        android:listSelector="@android:color/transparent"  
+        android:dividerHeight="1dp" >
+    </ListView>
+    
+     <TextView  
+        android:id="@+id/empty"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:text="暂无设备"
+	    android:textSize="20sp"
+	    android:gravity="center"
+	    android:layout_margin="10dp"/>
+
+</LinearLayout>
